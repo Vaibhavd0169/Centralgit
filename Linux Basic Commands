@@ -1,0 +1,79 @@
+1. Creating and Renaming Files/Directories
+
+mkdir test_dir
+cd test_dir
+touch example.txt
+mv example.txt renamed_example.txt
+
+mkdir test_dir creates a new directory named test_dir.
+
+
+cd test_dir moves inside the created directory.
+
+
+touch example.txt creates an empty file.
+
+
+mv example.txt renamed_example.txt renames the file.
+
+
+2. Viewing File Contents
+
+cat /etc/passwd
+head -n 5 /etc/passwd
+tail -n 5 /etc/passwd
+cat displays the full content of the file.
+
+
+head -n 5 displays the first 5 lines.
+
+
+tail -n 5 displays the last 5 lines.
+
+
+3. Searching for Patterns
+
+grep "root" /etc/passwd
+
+grep is used to search for specific text.
+
+
+This command displays all lines containing the word root from /etc/passwd.
+
+4. Zipping and Unzipping Files
+
+zip -r test_dir.zip test_dir
+
+mkdir unzipped_dir
+unzip test_dir.zip -d unzipped_dir
+
+zip -r compresses the directory recursively.
+
+
+unzip -d extracts the zip file into the specified directory.
+
+5. Downloading Files
+
+wget https://example.com/sample.txt
+
+wget downloads files from the internet using a URL.
+
+6. Changing File Permissions
+
+touch secure.txt
+chmod 444 secure.txt
+
+touch secure.txt creates a new file.
+
+
+chmod 444 sets read-only permission for owner, group, and others.
+
+7. Working with Environment Variables
+
+export MY_VAR="Hello, Linux!"
+echo $MY_VAR
+
+export creates an environment variable.
+
+
+echo $MY_VAR displays the variable value.
